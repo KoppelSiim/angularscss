@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+<body>
+    <form action="http://www.example.com/add.php">
+    <h1>
+        Checkbox
+    </h1>
+    <p>
+    
+        Please select your favourite music services
+        <br/>
+        <input type="checkbox" name="services" values="itunes" checked="checked"/>iTunes
+        <input type="checkbox" name="services" values="lastm" />Last.fm
+        <input type="checkbox" name="services" values="spotify" />Spotify
+    </p>
+    <h1>Dropdown</h1>
+    <p>
+        What device you want to listen to
+    </p>
+    <select name="devices" id="">
+        <option value="ipod">iPod</option>
+        <option value="radio">Radio</option>
+        <option value="computer">Computer</option>
+    </select>
+    <h1>
+        File input box
+    </h1>
+    <p>
+        Upload your song
+    </p>
+    <input type="file" name="user-song"><br/>
+    <input type="submit"value="Upload">
+    <fieldset>
+        <legend>Contact details</legend>
+        <label>Email: <br/> <input type="text" name="email"/> </label> <br/>
+        <label>Email: <br/> <input type="text" name="mobile"/> </label> <br/>
+        <label>Email: <br/> <input type="text" name="telephone"/> </label> <br/>
+    </fieldset>
+
+    <form action="http://www.example.com/add.php" method="post">
+        <h1>
+            Date input
+        </h1>
+        <label for="username">Departure date: </label>
+        <input type="date" name="depart"/>
+        <input type="submit" value="submit"/>
+    </form>
+    <h1>
+        Email input
+    </h1>
+    <p>
+        Please enter your email address:
+    </p>
+    <input type="email" name="email"/>
+    <input type="submit" value="submit"/>
+    <h1>
+        Placeholder
+    </h1>
+    Search: <br/>
+
+    <input type="search" name="search" placeholder="Enter keyword"/>
+    <input type="submit" value="search">
+
+    <h1>
+        Url Input
+    </h1>
+    <p>
+        Please enter your website address
+    </p>
+    <input type="url" name="website"/>
+    <input type="submit" value="submit"/>
+    <h1>Image button</h1>
+    <p>Subscribe to our email list:</p>
+    <input type="text" name="email">
+    <input type="image" src="/images/subscribe.jpg" height="50" width="50">
+    <h1>
+        Radio buttons
+    </h1>
+    <input id="female" type="radio" name="gender" value="f">
+    <label for="female">Female</label>
+    <input id="male" type="radio" name="gender" value="m">
+    <label for="male">Male</label>
+    <h1>
+        Multiple Select Box
+    </h1>
+    <p>
+        Do you play any of the following instruments?
+    </p>
+    <select name="instruments" size="4" multiple="multiple">
+        <option value="guitar" selected="selected">Guitar</option>
+        <option value="drums" selected="selected">Drums</option>
+        <option value="piano">Piano</option>
+        <option value="piano">Saxophone</option>
+    </select>
+    <h1>
+        Password
+    </h1>
+    <p>
+        Username:
+        <input type="text" name="username" size="15" maxlength="30">
+    </p>
+    <p>
+        Password:
+        <input type="password" name="password" size="15" maxlength="30">
+    </p>
+    <h1>
+        Teksti ala
+    </h1>
+    <p>
+        Kirjuta siia midagi
+    </p>
+    <textarea name="comments" id="" cols="20" rows="4" placeholder="Kirjuta siia midagi"></textarea>
+</form>
+</body>
+</html>
